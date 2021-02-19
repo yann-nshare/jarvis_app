@@ -1,0 +1,11 @@
+version: "3.3"
+networks:
+    api_server_default:
+        external: true
+
+services:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    environment:
+        ENV_NAME: dev

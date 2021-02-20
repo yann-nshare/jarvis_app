@@ -1,21 +1,19 @@
 import {BaseEntity, Entity, PrimaryGeneratedColumn, Column} from "typeorm";
 
 @Entity()
-export class Professional extends BaseEntity {
+export default class Professional extends BaseEntity {
     @PrimaryGeneratedColumn()
     id: number;
-
-    @Column()
-    Email: string;
 
     @Column()
     Username: string;
 
     @Column()
-    id_service: number;
+    Email: string;
+
+    @Column()
+    Service: string;
 
     @Column()
     Password: string;
 }
-
-export default Professional

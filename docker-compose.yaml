@@ -1,8 +1,23 @@
 version: "3.9"
 
 services:
+    postgres:
+        container_name: postgres
+        image: postgres:latest
+        ports:
+        - "5432:5432"
+        volumes:
+        - /data/postgres:/data/postgres
+        env_file:
+        - docker.env
+        networks:
+        - postgres
     build:
         context: .
         dockerfile: Dockerfile
     environment:
         ENV_NAME: dev
+
+networks:
+    postgres:
+        driver: bridge

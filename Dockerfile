@@ -4,7 +4,8 @@ FROM node:10.13.0-alpine
 ENV ENV_NAME dev
 
 # Create repo container
-WORKDIR /home/YANN/my_projet/pool_software/jarvis_app/app
+# WORKDIR /home/YANN/my_projet/pool_software/jarvis_app/app
+WORKDIR /app
 
 COPY package.json .
 

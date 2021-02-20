@@ -2,12 +2,6 @@ import {BaseEntity, Entity, PrimaryGeneratedColumn, Column} from "typeorm";
 
 @Entity()
 export default class Client extends BaseEntity{
-    /*constructor(username:string, password:string) {
-        super();
-        this.username = username;
-        this.password = password;
-    }*/
-
     @PrimaryGeneratedColumn()
     id: number;
 
@@ -23,5 +17,3 @@ export default class Client extends BaseEntity{
     @Column()
     email: string;
 }
-
-//export default Client

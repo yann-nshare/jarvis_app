@@ -1,6 +1,6 @@
 
 import Stripe from 'stripe';
-import * as express from 'express';
+import express from 'express';
 import bodyParser from 'body-parser';
 
 // my env is at the root of jarvis_app -> ".env"
@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 
 const app = express();
 
-// Use JSON parser for all non-webhook routes
+// Use JSON parser for all routes
 app.use(
   (
     req: express.Request,

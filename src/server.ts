@@ -1,7 +1,10 @@
-
+import {get} from 'env-var';
 import Stripe from 'stripe';
 import express from 'express';
 import bodyParser from 'body-parser';
+import route from './routes'
+import DB from './appdata';
+import { env } from './const_env';
 
 // my env is at the root of jarvis_app -> ".env"
 require('dotenv').config({ path: __dirname+'/.env' });
@@ -27,11 +30,16 @@ app.use(
   }
 );
 
-app.post(
-  '/',
-);
+app.use(
+  app
+)
+/*
+app.use(
+  route
+)*/
 
-app.listen(8080, (): void => {
+app.listen(env('PORT').asPortNumber, async() => {
+  await DB()
   console.log('listening on port 8080!');
 });
 

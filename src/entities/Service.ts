@@ -4,6 +4,6 @@ class Service {
     @PrimaryGeneratedColumn()
     id_service: number;
 
-    @Column
+    @Column()
     service: string;
 }

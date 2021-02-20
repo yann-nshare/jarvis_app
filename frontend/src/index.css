@@ -12,12 +12,13 @@ code {
     monospace;
 }
 .navbar{
-  background-color: #289131
+  background-color: white;
 }
 .navbar-expand-lg .navbar-nav .nav-link.my_color{
-  color: white;
+  color: rgb(16, 161, 197);
   font-weight: normal;
-  padding-left: 7rem;
+  padding-left: 5rem;
+  font-weight: 7px;
 }
 .navbar-light .navbar-brand.my_color{
   color: white;
@@ -25,4 +26,14 @@ code {
 }
 .nav.link{
   margin-left: 20px;
+}
+.h3, h3{
+  margin-left: -23px;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 5px;
+  color: rgb(16, 161, 197);
+}
+.navbar-brand{
+  margin-left: 15px;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './body.css';
 import App from './jarvis';
 import reportWebVitals from './reportWebVitals';
 

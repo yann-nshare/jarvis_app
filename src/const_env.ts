@@ -1,7 +1,10 @@
 import {get} from 'env-var';
-import {config} from 'dotenv';
-config()
+//import {config, env} from 'dotenv';
+import * as dotenv from 'dotenv';
 
+dotenv.config()
+
+console.log(process.env)
 
 const env = (name: string, required = true) => get(name).required(required);
 

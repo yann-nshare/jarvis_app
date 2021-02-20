@@ -16,9 +16,9 @@ RUN npm install
 ADD . /home/YANN/my_projet/pool_software/jarvis_app/app
 
 # TypeScript
-RUN npm run tsc
+# RUN npm run start
 
 #start
 CMD [ "npm", "start"]
 
-# EXPOSE 7001
+EXPOSE 8080

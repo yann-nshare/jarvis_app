@@ -6,23 +6,20 @@ export class Client {
     id: number;
 
     @Column()
-    username: string;
+    Email: string;
 
     @Column()
-    password: string;
+    Phone_nbr: string;
 
     @Column()
-    abonnement: string;
+    Services: string;
 
     @Column()
-    pp_url: string;
+    id_service: number;
 
     @Column()
-    prestation_nbr: string;
+    Password: string;
 
     @Column()
-    email: string;
-
-    @Column()
-    formule_type: string;
+    PP_url: string;
 }

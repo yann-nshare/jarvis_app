@@ -34,3 +34,5 @@ app.post(
 app.listen(8080, (): void => {
   console.log('listening on port 8080!');
 });
+
+export default app

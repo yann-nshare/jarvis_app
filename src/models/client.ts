@@ -9,12 +9,12 @@ export async function create_client(username:string, password:string, email:stri
     client.abonnement = false;
     return client.save();
 }
-/*
+
 export async function update_client(username:string,which:string,tochange:string) : Promise<Client> {
     const client = await Client.find({username: username})
-    return client.save();
-}*/
-//Update a client
+    return; //client.save();
+}
+//Udate a client
 
 //Get a client
 

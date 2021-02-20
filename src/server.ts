@@ -25,35 +25,35 @@ app.listen(8080, async() => {
   console.log('listening on port 8080!');
 });
 
-// //Register for client
-// app.post('/register/client', async (req, res) => {
-//   try {
-//     const{username, password, email} = req.body
-//     console.log(username, password, email)
-//     //Create client
-//     create_client()
-//     console.log(req.body)
-//     res.send("client Registered")
-//     res.status(200)
-//   } catch (error) {
-//     res.send('body error')
-//     res.status(500)
-//   }
-// });
+//Register for client
+app.post('/register/client', async (req, res) => {
+  try {
+    const{username, password, email} = req.body
+    console.log(username, password, email)
+    //Create client
+    create_client()
+    console.log(req.body)
+    res.send("client Registered")
+    res.status(200)
+  } catch (error) {
+    res.send('body error')
+    res.status(500)
+  }
+});
 
-// //Register for pro
-// app.post('/register/pro', async (req, res) => {
-//   try {
-//     const{username, password, email, pp_url, service} = req.body
-//     console.log(username, password, email, pp_url, service)
-//     //Create pro
-//     console.log(req.body)
-//     res.send("pro Registered")
-//     res.status(200)
-//   } catch (error) {
-//     res.send('body error')
-//     res.status(500)
-//   }
-// });
+//Register for pro
+app.post('/register/pro', async (req, res) => {
+  try {
+    const{username, password, email, pp_url, service} = req.body
+    console.log(username, password, email, pp_url, service)
+    //Create pro
+    console.log(req.body)
+    res.send("pro Registered")
+    res.status(200)
+  } catch (error) {
+    res.send('body error')
+    res.status(500)
+  }
+});
 
 //export default app

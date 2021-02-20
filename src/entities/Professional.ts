@@ -1,7 +1,7 @@
-import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
+import {BaseEntity, Entity, PrimaryGeneratedColumn, Column} from "typeorm";
 
 @Entity()
-export class Professional {
+export class Professional extends BaseEntity {
     @PrimaryGeneratedColumn()
     id: number;
 
@@ -9,16 +9,13 @@ export class Professional {
     Email: string;
 
     @Column()
-    Phone_nbr: string;
+    Username: string;
 
     @Column()
     id_service: number;
 
     @Column()
     Password: string;
-
-    @Column()
-    PP_url: string;
 }
 
 export default Professional

@@ -3,6 +3,7 @@ import {get} from 'env-var';
 import { stringify } from 'querystring';
 import { env } from './const_env';
 
+//Connect to database
 export default async function DB(): Promise<Connection>{
     /*console.log(env('HOST').asString(), env('PORT').asPortNumber(),
     env('DB_PORT').asPortNumber(), env('DB_USER').asString(), env('DB_PASS').asString(), 
@@ -19,7 +20,7 @@ export default async function DB(): Promise<Connection>{
         ],
         synchronize: true,
     }).then(connection => {
-        console.log("Connected");
+        console.log("Connected to database");
         return connection;
         // here you can start to work with your entities
     }).catch(error => {

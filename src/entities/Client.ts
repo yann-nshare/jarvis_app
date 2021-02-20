@@ -17,20 +17,11 @@ export default class Client extends BaseEntity{
     @Column()
     password: string;
 
-    /*@Column()
-    abonnement: string;
-
     @Column()
-    pp_url: string;
-
-    @Column()
-    prestation_nbr: string;
+    abonnement: boolean;
 
     @Column()
     email: string;
-
-    @Column()
-    formule_type: string;*/
 }
 
 //export default Client

@@ -13,10 +13,10 @@ COPY package.json .
 RUN npm install
 
 # Copy all source code to work directory
-ADD . /home/YANN/my_projet/pool_software/jarvis_app/app
+ADD . /app
 
 # TypeScript
-# RUN npm run start
+RUN npm run start
 
 #start
 CMD [ "npm", "start"]

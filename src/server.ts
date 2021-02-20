@@ -1,15 +1,15 @@
-import {get} from 'env-var';
 import Stripe from 'stripe';
 import express from 'express';
 import bodyParser from 'body-parser';
 import DB from './appdata';
-import { env } from './const_env';
 import { create_client } from './models/client';
-import { create } from 'domain';
+require('dotenv').config();
+
+// console.log(process.env)
+
 
 //export var db;
 // my env is at the root of jarvis_app -> ".env"
-require('dotenv').config({ path: __dirname+'/.env' });
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: '2020-08-27',

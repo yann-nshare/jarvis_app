@@ -1,20 +1,19 @@
-import {Connection, createConnection} from 'typeorm';
-import {get} from 'env-var';
+import { Connection, createConnection } from 'typeorm';
 import { stringify } from 'querystring';
-import { env } from './const_env';
+import {DB_NAME, DB_PORT, DB_PASS, DB_USER, HOST} from './const_env';
 
 //Connect to database
-export default async function DB(): Promise<Connection>{
+export default async function DB(): Promise<Connection> {
     /*console.log(env('HOST').asString(), env('PORT').asPortNumber(),
     env('DB_PORT').asPortNumber(), env('DB_USER').asString(), env('DB_PASS').asString(), 
     env('DB_NAME').asString());*/
     return createConnection({
         type: "postgres",
-        host: env('HOST').asString(),
-        port: env('DB_PORT').asPortNumber(),
-        username: env('DB_USER').asString(),
-        password: env('DB_PASS').asString(),
-        database: env('DB_NAME').asString(),
+        host: HOST,
+        port: DB_PORT,
+        username: DB_USER,
+        password: DB_PASS,
+        database: DB_NAME,
         entities: [
             __dirname + "/entities/*.ts"
         ],
@@ -27,4 +26,4 @@ export default async function DB(): Promise<Connection>{
         console.log(error);
         return process.exit(84);
     });
-} 
+}

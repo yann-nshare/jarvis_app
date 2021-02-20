@@ -6,8 +6,8 @@ export class ClientController {
 }
 
 //Create
-const create_user = new Client({})
 
+//const create_user = new Client({})
 
 
 //Read

@@ -37,3 +37,8 @@ code {
 .navbar-brand{
   margin-left: 15px;
 }
+
+.profile_logo
+{
+  height: 100%;
+}

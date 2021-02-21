@@ -2,7 +2,7 @@ import React from 'react';
 import Avatar from '@material-ui/core/Avatar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Dropdown,Navbar, DropdownButton} from 'react-bootstrap';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function home() {
   return (
@@ -12,7 +12,7 @@ function home() {
           <Navbar.Brand href="#home">
           <Link to="/">
           <Avatar alt="Jarvis Logo" src="jarvis_logo.png" />
-          <h3>JARVIS</h3>        
+          <h3>JARVIS</h3>
           </Link>
           </Navbar.Brand>
           </Navbar.Brand>

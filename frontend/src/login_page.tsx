@@ -18,7 +18,7 @@ function Login_page(props: any) {
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
-
+              <br/>
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />

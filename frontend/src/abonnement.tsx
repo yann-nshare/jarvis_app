@@ -1,7 +1,6 @@
 import React from 'react';
-import Avatar from '@material-ui/core/Avatar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col,Navbar,Card, Container, CardDeck} from 'react-bootstrap';
+import { Row, Col, Card, Container, CardDeck} from 'react-bootstrap';
 
 
 function Abonnement() {

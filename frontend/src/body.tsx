@@ -13,8 +13,7 @@ function Body() {
                 height={1080}
                 alt=""
                 src="homepage.jpg"
-              />
-              
+              />  
         </Figure>
         </Col>
         <Col>

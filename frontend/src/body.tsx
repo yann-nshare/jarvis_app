@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Avatar from '@material-ui/core/Avatar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Figure, Container, Row,Col, Carousel, Card, Jumbotron, Button, Alert} from 'react-bootstrap';
 

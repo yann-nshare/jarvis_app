@@ -1,13 +1,12 @@
 import React from 'react';
-import Avatar from '@material-ui/core/Avatar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, Dropdown,Navbar,Card, DropdownButton} from 'react-bootstrap';
 import Body from './body';
 import Footer from './footer';
 import Header from './home';
-import {Router, Link, Route} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Abonnement from './abonnement';
-import Connection_page from './connection_page'
+import Register_page from './register_page'
+import Login_page from './login_page'
 import Community from './community'
 
 function page_nav() {
@@ -24,12 +23,16 @@ function page_nav() {
       </Route>
 
 
-      <Route exact path="/Community" component={Community}>
+      <Route exact path="/community" component={Community}>
         <Community/>
       </Route>
       
-      <Route exact path="/connection" component={Connection_page}>
-        <Connection_page/>
+      <Route exact path="/register" component={Register_page}>
+        <Register_page/>
+      </Route>
+
+      <Route exact path="/login" component={Login_page}>
+        <Login_page/>
       </Route>
      <Footer/>
     </div>

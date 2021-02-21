@@ -1,10 +1,8 @@
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, Dropdown,Navbar,Card, DropdownButton} from 'react-bootstrap';
-import Body from './body';
-import Footer from './footer';
-import {BrowserRouter, Link} from 'react-router-dom'
+import { Nav, Dropdown,Navbar, DropdownButton} from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 
 function home() {
   return (
@@ -13,7 +11,7 @@ function home() {
           <Navbar.Brand href="#home" className="my_color">
           <Navbar.Brand href="#home">
           <Link to="/">
-          <Avatar alt="Remy Sharp" src="images/jarvis_logo.png" />
+          <Avatar alt="Jarvis Logo" src="jarvis_logo.png" />
           <h3>JARVIS</h3>        
           </Link>
           </Navbar.Brand>
@@ -21,19 +19,18 @@ function home() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#Community" className="my_color"><Link to="/Community">Community</Link></Nav.Link>
-              <Nav.Link href="#pricing" className="my_color"><Link to="/pricing">pricing</Link></Nav.Link>
+              <Nav.Link href="#community" className="my_color"><Link to="/community">Community</Link></Nav.Link>
+              <Nav.Link href="#pricing" className="my_color"><Link to="/pricing">Pricing</Link></Nav.Link>
               <Nav.Link href="#" className="my_color">About us</Nav.Link>
             </Nav>
             <Nav>
-            <DropdownButton id="dropdown-basic-button" title="mon compte">
-            <Dropdown.Item href="#/connection"><Link to="/connection">connection</Link></Dropdown.Item>
-            <Dropdown.Item href="#/cree compte"><Link to="/connection">cree compte</Link></Dropdown.Item>
+            <DropdownButton id="dropdown-basic-button" title="Account">
+            <Dropdown.Item href="#/login"><Link to="/login">Log in</Link></Dropdown.Item>
+            <Dropdown.Item href="#/register"><Link to="/register">Register</Link></Dropdown.Item>
             </DropdownButton>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        
     </div>
   )
 }

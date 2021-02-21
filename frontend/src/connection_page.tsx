@@ -5,7 +5,7 @@ import { Nav, Dropdown,Navbar,Card, DropdownButton, Col, Button, Form} from 'rea
 import Body from './body';
 import Footer from './footer';
 
-function connection_page(props: any) {
+function Connection_page(props: any) {
   return (
     <div className="navigationbar">
       <Navbar collapseOnSelect expand="lg">
@@ -89,4 +89,4 @@ function connection_page(props: any) {
   )
 }
 
-export default connection_page;
+export default Connection_page;

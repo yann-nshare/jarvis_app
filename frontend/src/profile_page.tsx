@@ -5,9 +5,9 @@ import { Nav, Dropdown,Navbar,Card, DropdownButton} from 'react-bootstrap';
 import Body from './body';
 import Footer from './footer';
 
-function page_nav() {
+function profile_page(props: any) {
   return (
-    <div className="page_nav">
+    <div className="navigationbar">
       <Navbar collapseOnSelect expand="lg">
           <Navbar.Brand href="#home" className="my_color">
           <Navbar.Brand href="#home">
@@ -31,10 +31,8 @@ function page_nav() {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Body/>
-        <Footer/>
     </div>
   )
 }
 
-export default page_nav;
+export default profile_page;

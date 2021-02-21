@@ -12,7 +12,7 @@ code {
     monospace;
 }
 .navbar{
-  background-color: white;
+    background-color: white;
 }
 .navbar-expand-lg .navbar-nav .nav-link.my_color{
   color: rgb(16, 161, 197);

@@ -1,34 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ReactDOM from 'react-dom';
-import Avatar from '@material-ui/core/Avatar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, NavDropdown,Navbar,Form, FormControl} from 'react-bootstrap';
+import Body from './body';
+import Footer from './footer';
+import Header from './home';
+import { Route } from 'react-router-dom';
+import Abonnement from './abonnement';
+import Register_page from './register_page'
+import Login_page from './login_page'
+import Profile_page from './profile_page'
+import Community from './community'
+import About from './about'
+import Buy from './buy'
 
 export function page_nav() {
   return (
     <div className="page_nav">
-      <Navbar collapseOnSelect expand="lg">
-          <Navbar.Brand href="#home" className="my_color">
-          <Avatar alt="Remy Sharp" src="logo.svg" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="#features" className="my_color">JARVIS</Nav.Link>
-              <Nav.Link href="#features" className="my_color">Abonnement</Nav.Link>
-              <Nav.Link href="#pricing" className="my_color">Pricing</Nav.Link>
-              <Nav.Link href="#pricing" className="my_color">About us</Nav.Link>
-            </Nav>
-            <Nav>
-              <NavDropdown title="connection" id="collasible-nav-dropdown" className="my_color">
-                <NavDropdown.Item href="#action/3.1" className="my_color">connection</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2" className="my_color">creer compte</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
+      <Header/>
+      <Route exact path="/" component={Body}>
+     <Body/>
+      </Route>
+      <Route exact path="/pricing" component={Abonnement}>
+        <Abonnement/>
+      </Route>
+      <Route exact path="/community" component={Community}>
+        <Community/>
+      </Route>
+      <Route exact path="/register" component={Register_page}>
+        <Register_page/>
+      </Route>
+      <Route exact path="/login" component={Login_page}>
+        <Login_page/>
+      </Route>
+      <Route exact path="/profile" component={Profile_page}>
+        <Profile_page/>
+      </Route>
+      <Route exact path="/about" component={About}>
+        <About/>
+      </Route>
+      <Route exact path="/buy" component={Buy}>
+        <Buy/>
+      </Route>
+     <Footer/>
     </div>
   )
 }

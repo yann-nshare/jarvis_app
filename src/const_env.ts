@@ -1,14 +1,14 @@
 import { from, logger } from "env-var"
 import { config } from "dotenv"
+import { get } from 'env-var'
 
-config()
+//config()
 
-const debugged = from(process.env, {}, logger)
-export const env = (name: string, required = true) => debugged.get(name).required(required)
+//const debugged = from(process.env, {}, logger)
+//export const env = (name: string, required = true) => debugged.get(name).required(required)
 
-//const env = (name: string, required = true) => get(name).required(required);
+export const env = (name: string, required = true) => get(name).required(required);
 
-export const ENV_NAME = env('ENV_NAME').asString()
 export const PORT = env('PORT').asPortNumber()
 export const TYPE = env('TYPE').asString()
 export const DB_NAME = env('DB_NAME').asString()

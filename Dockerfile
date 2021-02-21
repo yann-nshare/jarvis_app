@@ -26,7 +26,6 @@ ADD . /app
 
 RUN source .envrc
 
-RUN npm run dev:db
 #RUN docker run --name ${DB_NAME} -e POSTGRES_PASSWORD=${DB_PASS} -e POSTGRES_USER=${DB_USER} -e POSTGRES_DB=${DB_NAME} -p ${DB_PORT}:${DB_PORT} -d postgres:alpine
 
 # TypeScript

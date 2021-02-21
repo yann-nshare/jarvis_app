@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Button, Form} from 'react-bootstrap';
 
+/*html se connect a un compte "login page"
+*/
 function Login_page(props: any) {
   return (
     <div className="navigationbar">

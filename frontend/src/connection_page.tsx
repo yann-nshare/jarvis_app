@@ -5,7 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, NavDropdown,Navbar,Form, FormControl} from 'react-bootstrap';
 
-function connection_page(props: any) {
+function Connection_page(props: any) {
   return (
     <div className="page_nav">
       <Navbar collapseOnSelect expand="lg">
@@ -38,4 +38,4 @@ function connection_page(props: any) {
   )
 }
 
-export default connection_page;
+export default Connection_page;

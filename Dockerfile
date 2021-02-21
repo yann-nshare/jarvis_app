@@ -6,7 +6,7 @@ ENV TYPE postgres
 ENV HOST localhost
 ENV PORT 8080
 ENV DB_NAME jarvis_database
-ENV DB_USER root
+ENV DB_USER admin
 ENV DB_PASS 123
 ENV DB_PORT 5432
 
@@ -25,6 +25,7 @@ RUN npm install
 ADD . /app
 
 # TypeScript
+
 RUN npm run start
 
 #start

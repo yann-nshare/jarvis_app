@@ -1,16 +1,10 @@
-/*import {get} from 'env-var';
-import {config} from 'dotenv';
-
-
-
-config()*/
 import { from, logger } from "env-var"
 import { config } from "dotenv"
 
 config()
 
 const debugged = from(process.env, {}, logger)
-const env = (name: string, required = true) => debugged.get(name).required(required)
+export const env = (name: string, required = true) => debugged.get(name).required(required)
 
 //const env = (name: string, required = true) => get(name).required(required);
 

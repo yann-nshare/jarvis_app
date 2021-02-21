@@ -1,7 +1,8 @@
 import { Connection, createConnection } from 'typeorm';
 import { stringify } from 'querystring';
 import {DB_NAME, DB_PORT, DB_PASS, DB_USER, HOST} from './const_env';
-
+//import { env } from 'process';
+import { env } from './const_env';
 //Connect to database
 export default async function DB(): Promise<Connection> {
     /*console.log(env('HOST').asString(), env('PORT').asPortNumber(),
@@ -9,11 +10,11 @@ export default async function DB(): Promise<Connection> {
     env('DB_NAME').asString());*/
     return createConnection({
         type: "postgres",
-        host: "localhost",
-        port: 5432,
-        username: "admin",
-        password: "123",
-        database: "jarvis_database",
+        host: env('HOST').asString(),
+        port: env('DB_PORT').asPortNumber(),
+        username: env('DB_USER').asString(),
+        password: env('DB_PASS').asString(),
+        database: env('DB_NAME').asString(),
         entities: [
             __dirname + "/entities/*.ts"
         ],

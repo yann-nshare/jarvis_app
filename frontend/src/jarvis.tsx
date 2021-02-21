@@ -7,8 +7,10 @@ import { Route } from 'react-router-dom';
 import Abonnement from './abonnement';
 import Register_page from './register_page'
 import Login_page from './login_page'
-import Community from './community'
 import Profile_page from './profile_page'
+import Community from './community'
+import About from './about'
+import Buy from './buy'
 
 function page_nav() {
   return (
@@ -31,6 +33,12 @@ function page_nav() {
       </Route>
       <Route exact path="/profile" component={Profile_page}>
         <Profile_page/>
+      </Route>
+      <Route exact path="/about" component={About}>
+        <About/>
+      </Route>
+      <Route exact path="/buy" component={Buy}>
+        <Buy/>
       </Route>
      <Footer/>
     </div>

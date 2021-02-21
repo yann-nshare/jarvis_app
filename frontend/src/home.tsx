@@ -21,7 +21,7 @@ function home() {
             <Nav className="mr-auto">
               <Nav.Link href="#community" className="my_color"><Link to="/community">Community</Link></Nav.Link>
               <Nav.Link href="#pricing" className="my_color"><Link to="/pricing">Pricing</Link></Nav.Link>
-              <Nav.Link href="#" className="my_color">About us</Nav.Link>
+              <Nav.Link href="#About" className="my_color"><Link to="/About">About us</Link></Nav.Link>
             </Nav>
             <Nav>
             <DropdownButton id="dropdown-basic-button" title="Account">

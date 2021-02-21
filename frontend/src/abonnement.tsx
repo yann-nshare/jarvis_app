@@ -1,7 +1,8 @@
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col,Navbar,Card, Container, CardDeck} from 'react-bootstrap';
+import { Row, Col,Navbar,Card, Container, CardDeck,Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 
 
 function Abonnement() {
@@ -17,9 +18,14 @@ function Abonnement() {
               This is a wider card with supporting text below as a natural lead-in to
               additional content. This content is a little bit longer.
             </Card.Text>
+            <Link to="/Buy">
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+            </Link>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted"><h3>90$</h3></small>
           </Card.Footer>
         </Card></Col>
 
@@ -31,9 +37,14 @@ function Abonnement() {
               This card has supporting text below as a natural lead-in to additional
               content.{' '}
             </Card.Text>
+            <Link to="/Buy">
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+            </Link>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted"><h3>100$</h3></small>
           </Card.Footer>
         </Card>(wider)</Col>
         
@@ -46,9 +57,14 @@ function Abonnement() {
               additional content. This card has even longer content than the first to
               show that equal height action.
             </Card.Text>
+            <Link to="/Buy">
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+            </Link>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted"><h3>200$</h3></small>
           </Card.Footer>
         </Card></Col>
           </Row>
@@ -63,9 +79,14 @@ function Abonnement() {
               additional content. This card has even longer content than the first to
               show that equal height action.
             </Card.Text>
+            <Link to="/Buy">
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+            </Link>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted"><h3>300$</h3></small>
           </Card.Footer>
         </Card>3</Col>
 
@@ -78,9 +99,14 @@ function Abonnement() {
               additional content. This card has even longer content than the first to
               show that equal height action.
             </Card.Text>
+            <Link to="/Buy">
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+            </Link>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted"><h3>400$</h3></small>
           </Card.Footer>
         </Card></Col>
 
@@ -93,9 +119,14 @@ function Abonnement() {
               additional content. This card has even longer content than the first to
               show that equal height action.
             </Card.Text>
+            <Link to="/Buy">
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+            </Link>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted"><h3>500$</h3></small>
           </Card.Footer>
         </Card></Col>
           </Row>

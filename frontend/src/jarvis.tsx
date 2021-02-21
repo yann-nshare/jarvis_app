@@ -8,6 +8,8 @@ import Abonnement from './abonnement';
 import Register_page from './register_page'
 import Login_page from './login_page'
 import Community from './community'
+import About from './about'
+import Buy from './buy'
 
 function page_nav() {
   return (
@@ -33,6 +35,14 @@ function page_nav() {
 
       <Route exact path="/login" component={Login_page}>
         <Login_page/>
+      </Route>
+
+      <Route exact path="/About" component={About}>
+        <About/>
+      </Route>
+
+      <Route exact path="/Buy" component={Buy}>
+        <Buy/>
       </Route>
      <Footer/>
     </div>

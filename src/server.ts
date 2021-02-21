@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import DB from './appdata';
 import { create_client, yes_abo, no_abo, get_client } from './models/client';
 import { create_pro, get_pro } from './models/professional';
+import { request } from 'node:http';
 
 // my env is at the root of jarvis_app -> ".env"
 
@@ -102,6 +103,16 @@ app.get('/login/pro', async (req, res) => {
     const client_data = await get_pro(username);
     console.log(client_data);
     res.send(client_data)
+    res.status(200)
+  } catch (error) {
+    res.send(error)
+    res.status(500)
+  }
+})
+
+app.get('/chekout', async (req, res) => {
+  try {
+    res.send()
     res.status(200)
   } catch (error) {
     res.send(error)

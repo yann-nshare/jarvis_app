@@ -4,7 +4,6 @@ import bodyParser from 'body-parser';
 import DB from './appdata';
 import { create_client, yes_abo, no_abo, get_client } from './models/client';
 import { create_pro, get_pro } from './models/professional';
-import { request } from 'node:http';
 
 // my env is at the root of jarvis_app -> ".env"
 var stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
@@ -12,13 +11,17 @@ var stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 export const app = express()
 // JSON parser
 app.use(
-  bodyParser.json()
+  bodyParser.json(page_nav())
 )
 
 //Start connection
 app.listen(8080, async() => {
   var db = await DB()
   console.log('listening on port 8080!');
+});
+
+app.post('/', async (req, res) => {
+  res.send()
 });
 
 //Register for client

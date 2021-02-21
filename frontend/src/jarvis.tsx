@@ -6,7 +6,7 @@ import Avatar from '@material-ui/core/Avatar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, NavDropdown,Navbar,Form, FormControl} from 'react-bootstrap';
 
-function page_nav() {
+export function page_nav() {
   return (
     <div className="page_nav">
       <Navbar collapseOnSelect expand="lg">

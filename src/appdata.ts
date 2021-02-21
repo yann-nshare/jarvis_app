@@ -9,11 +9,11 @@ export default async function DB(): Promise<Connection> {
     env('DB_NAME').asString());*/
     return createConnection({
         type: "postgres",
-        host: HOST,
-        port: DB_PORT,
-        username: DB_USER,
-        password: DB_PASS,
-        database: DB_NAME,
+        host: "localhost",
+        port: 5432,
+        username: "admin",
+        password: "123",
+        database: "jarvis_database",
         entities: [
             __dirname + "/entities/*.ts"
         ],

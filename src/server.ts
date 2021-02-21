@@ -7,10 +7,7 @@ import { create_pro, get_pro } from './models/professional';
 import { request } from 'node:http';
 
 // my env is at the root of jarvis_app -> ".env"
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2020-08-27',
-});
+var stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 export const app = express()
 // JSON parser

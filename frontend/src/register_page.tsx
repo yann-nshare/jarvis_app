@@ -2,6 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Button, Form} from 'react-bootstrap';
 
+/*html pour creer une connection "rigester page"
+*/
+
 function Register_page(props: any) {
   return (
     <div className="navigationbar">
